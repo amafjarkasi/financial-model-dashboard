@@ -3,20 +3,20 @@ import ChartistGraph from 'react-chartist'
 
 class Dashboard extends Component {
   render() {
-    let dataPie = {
+    /*let dataPie = {
       labels: ["40%", "20%", "40%"],
       series: [40, 20, 40]
-    }
+    }*/
     let dataSales = {
       labels: [
         "9:00AM",
-        "12:00AM",
-        "3:00PM",
-        "6:00PM",
-        "9:00PM",
+        "10:00AM",
+        "11:00AM",
         "12:00PM",
+        "1:00PM",
+        "2:00PM",
         "3:00AM",
-        "6:00AM"
+        "4:00AM"
       ],
       series: [
         [287, 385, 490, 492, 554, 586, 698, 695],
@@ -52,7 +52,7 @@ class Dashboard extends Component {
             <div className="col-md-8">
               <div className="card">
                 <div className="card-header ">
-                  <h4 className="card-title">Common Indexes</h4>
+                  <h4 className="card-title">Major World Indexes</h4>
                   <p className="card-category">24 Hours performance</p>
                 </div>
                 <div className="card-body ">
@@ -60,13 +60,13 @@ class Dashboard extends Component {
                 </div>
                 <div className="card-footer ">
                   <div className="legend">
-                    <i className="fa fa-circle text-info"></i> Open
-                    <i className="fa fa-circle text-danger"></i> Click
-                    <i className="fa fa-circle text-warning"></i> Click Second Time
+                    <i className="fa fa-circle text-info"></i> NYSE
+                    <i className="fa fa-circle text-danger"></i> TSX
+                    <i className="fa fa-circle text-warning"></i> HSE
                 </div>
                   <hr />
                   <div className="stats">
-                    <i className="fa fa-history"></i> Updated 3 minutes ago
+                    <i className="fa fa-history"></i> Updated -:-- minutes ago
                   </div>
                 </div>
               </div>
