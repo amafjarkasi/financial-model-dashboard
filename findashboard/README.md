@@ -1,4 +1,5 @@
-
+Stocks dashboard made with React.
+This dashboard pulls data from Yahoo Finance API.
 
 
 # Getting Started with Create React App
