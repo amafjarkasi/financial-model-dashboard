@@ -12,7 +12,7 @@ class Navbar extends Component {
                 + currentdate.getDate()+"/"
                 + currentdate.getFullYear()+ " @ "  
                 + currentdate.getHours() + ":"  
-                + currentdate.getMinutes()}</a>
+                + currentdate.getMinutes ()}</a>
           <div className="collapse navbar-collapse justify-content-end" id="navigation">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
