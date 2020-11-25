@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
   render() {
-    let currentdate = new Date(); 
+    let currentdate = new Date();
+    
+    
     return (
       <nav className="navbar navbar-expand-lg " color-on-scroll="500">
         <div className="container-fluid">
