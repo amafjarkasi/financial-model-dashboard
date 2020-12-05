@@ -18,8 +18,6 @@ class Sidebar extends Component {
                 <p>Dashboard</p>
               </NavLink>
             </li>
-
-
           </ul>
         </div>
       </div>
