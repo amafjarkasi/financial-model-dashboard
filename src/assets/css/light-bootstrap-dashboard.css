@@ -25,14 +25,22 @@ body,footer,nav.navbar.navbar-expand-lg,navbar navbar-expand-lg{
 }
 
 div.content{
-    color:#191a1c !important;
+    background-color:#191a1c !important;
 }
 
 /*Adjust Chart palette */
 
+h4.card-title{
+    color:#cfd0d0!important;
+}
 
+div.card-header,div.card-body,div.card-footer{
+    background:#181a1c !important;
+}
 
-
+span.ct-label.ct-vertical.ct-start,span.ct-label.ct-horizontal.ct-end,div.legend{
+    color:#cfd0d0!important;
+}
 
 
 @keyframes spin {
@@ -399,7 +407,7 @@ body>.navbar-collapse .sidebar-background {
 .sidebar .logo,
 body>.navbar-collapse .logo {
     padding: 10px 15px 9px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);*/
     position: relative;
     z-index: 4;
 }
@@ -502,7 +510,7 @@ body>.navbar-collapse .nav li.active .nav-link {
 .sidebar .nav li.separator,
 body>.navbar-collapse .nav li.separator {
     margin: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
 .sidebar .nav li.separator+.nav-item,
@@ -544,7 +552,7 @@ body>.navbar-collapse .nav .nav-link {
 .sidebar .logo,
 body>.navbar-collapse .logo {
     padding: 10px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
 .sidebar .logo p,
@@ -727,11 +735,12 @@ body>.navbar-collapse[data-color="purple"]:after {
 }
 
 .main-panel>.footer {
-    border-top: 1px solid #e7e7e7;
+    border-top: 0.1px dashed #e7e7e7;
 }
 
 .main-panel .navbar {
     margin-bottom: 0;
+    border-bottom: 0.1px dashed #fcfbfc;
 }
 
 .sidebar,
