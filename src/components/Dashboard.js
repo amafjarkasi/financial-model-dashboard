@@ -3,11 +3,6 @@ import ChartistGraph from 'react-chartist'
 
 class Dashboard extends Component {
 
-
-  componentDidMount(){
-
-  }
-  
   render() {
     let dataSales = {
       labels: [
