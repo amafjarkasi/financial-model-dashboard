@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { Switch, Route, Redirect } from 'react-router-dom'
 import Dashboard from './Dashboard'
 import UserProfile from './UserProfile'
 
