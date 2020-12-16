@@ -8,12 +8,16 @@ class Navbar extends Component {
   componentDidMount(){
     let dateNow=new Date();
     let hours="";
-    let ampm="";
+    let ampm=" AM";
 
+    if(dateNow.getHours()>12){
+      hours=dateNow.getHours()-12;
+      ampm=" PM"
+    }
     if((dateNow.getMinutes()<10)===true){
-      this.setState({currentDate:dateNow.getMonth()+1+"/"+dateNow.getDate()+"/"+dateNow.getFullYear()+" @ "+dateNow.getHours()+":0"+dateNow.getMinutes()});
+      this.setState({currentDate:dateNow.getMonth()+1+"/"+dateNow.getDate()+"/"+dateNow.getFullYear()+" @ "+hours+":0"+dateNow.getMinutes()+ampm});
     }else{
-      this.setState({currentDate:dateNow.getMonth()+1+"/"+dateNow.getDate()+"/"+dateNow.getFullYear()+" @ "+dateNow.getHours()+":"+dateNow.getMinutes()});
+      this.setState({currentDate:dateNow.getMonth()+1+"/"+dateNow.getDate()+"/"+dateNow.getFullYear()+" @ "+hours+":"+dateNow.getMinutes()+ampm});
     }
   }
   render() {
