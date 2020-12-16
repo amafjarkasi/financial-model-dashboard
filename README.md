@@ -1,5 +1,5 @@
 # Stocks dashboard made with React
-This dashboard pulls data from Yahoo Finance API.
+This dashboard pulls data from the Financial Modeling Prep API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
