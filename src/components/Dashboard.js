@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ChartistGraph from 'react-chartist'
 
 class Dashboard extends Component {
-
+  
   render() {
     let dataSales = {
       labels: [
@@ -36,9 +36,9 @@ class Dashboard extends Component {
                 </div>
                 <div className="card-footer ">
                   <div className="legend">
-                    <i className="fa fa-circle text-info"></i> NYSE
-                    <i className="fa fa-circle text-danger"></i> TSX
-                    <i className="fa fa-circle text-warning"></i> HSE
+                    <i className="fa fa-circle text-info"></i> NYSE 
+                    <i className="fa fa-circle text-danger"></i> TSX 
+                    <i className="fa fa-circle text-warning"></i> HSE 
                 </div>
                   <hr />
                   <div className="stats">
