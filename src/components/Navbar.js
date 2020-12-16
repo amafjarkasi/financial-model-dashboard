@@ -7,6 +7,9 @@ class Navbar extends Component {
   
   componentDidMount(){
     let dateNow=new Date();
+    let hours="";
+    let ampm="";
+
     if((dateNow.getMinutes()<10)===true){
       this.setState({currentDate:dateNow.getMonth()+1+"/"+dateNow.getDate()+"/"+dateNow.getFullYear()+" @ "+dateNow.getHours()+":0"+dateNow.getMinutes()});
     }else{
