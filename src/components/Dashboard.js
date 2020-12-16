@@ -3,6 +3,16 @@ import ChartistGraph from 'react-chartist'
 
 class Dashboard extends Component {
   
+  state={dataSales:{labels:[],series:[]}};
+
+  componentDidMount(){
+
+  }
+
+  componentDidUpdate(){
+    /*Update the last updated x minutes ago clock*/
+  }
+
   render() {
     let dataSales = {
       labels: [

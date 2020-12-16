@@ -7,9 +7,9 @@ class Navbar extends Component {
   
   componentDidMount(){
     let dateNow=new Date();
-    let hours="";
+    let hours=dateNow.getHours();
     let ampm=" AM";
-
+    
     if(dateNow.getHours()>12){
       hours=dateNow.getHours()-12;
       ampm=" PM"
