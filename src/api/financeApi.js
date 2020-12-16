@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL:'',
+    baseURL:'financialmodelingprep.com',
     headers:{
         Authorization:''
     }
