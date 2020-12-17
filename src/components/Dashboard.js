@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import ChartistGraph from 'react-chartist'
+import financeApi from '../api/financeApi';
 
 class Dashboard extends Component {
   
+
   state={dataSales:{labels:[],series:[]}};
 
   componentDidMount(){
-
+    
   }
 
   componentDidUpdate(){
