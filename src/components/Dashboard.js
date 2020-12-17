@@ -1,21 +1,27 @@
 import React, { Component } from 'react'
 import ChartistGraph from 'react-chartist'
-import financeApi from '../api/financeApi';
+import axios from 'axios';
+
 
 class Dashboard extends Component {
   
 
-  state={dataSales:{labels:[],series:[]}};
+  state={mes:[]};
 
-  componentDidMount(){
+  onSearchSubmit=async()=>{
+    const response = await axios.get('https://financialmodelingprep.com/api/v3/quote/AAPL?',{
+
+    });
+    console.log(response.data[0].price);
     
+   
   }
-
-  componentDidUpdate(){
-    /*Update the last updated x minutes ago clock*/
+  componentDidMount(){
+    this.onSearchSubmit();
   }
 
   render() {
+    
     let dataSales = {
       labels: [
         "9:00AM",
@@ -38,6 +44,7 @@ class Dashboard extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-8">
+            <button onSubmit={this.onSearchSubmit}/>
               <div className="card">
                 <div className="card-header ">
                   <h4 className="card-title">Major World Indexes</h4>
