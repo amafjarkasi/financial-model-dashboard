@@ -9,7 +9,7 @@ class Dashboard extends Component {
   state={mes:[]};
 
   onSearchSubmit=async()=>{
-    const response = await axios.get('https://financialmodelingprep.com/api/v3/quote/AAPL?',{
+    const response = await axios.get('https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=da6240539dc1685ff601c5c2edb3ff29',{
 
     });
     console.log(response.data[0].price);
